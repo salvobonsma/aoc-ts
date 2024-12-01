@@ -11,7 +11,7 @@ export async function day1a(data: string[]) {
       .map(value => +value.split("  ")[1])
       .sort((a1, b1) => a1 - b1);
 
-  return  a
+  return a
       .map((value, index) => Math.abs(value - b[index]))
       .reduce((previousValue, currentValue) => previousValue + currentValue);
 }
